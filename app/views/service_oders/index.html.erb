@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Service oders</h1>
+
+<div id="service_oders">
+  <% @service_oders.each do |service_oder| %>
+    <%= render service_oder %>
+    <p>
+      <%= link_to "Show this service oder", service_oder %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New service oder", new_service_oder_path %>

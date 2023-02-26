@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @service_oder %>
+
+<div>
+  <%= link_to "Edit this service oder", edit_service_oder_path(@service_oder) %> |
+  <%= link_to "Back to service oders", service_oders_path %>
+
+  <%= button_to "Destroy this service oder", @service_oder, method: :delete %>
+</div>
